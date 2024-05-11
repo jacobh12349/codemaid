@@ -314,7 +314,7 @@ namespace SteveCadwallader.CodeMaid.UI.ToolWindows.Spade
         /// <param name="codeModel">The code model.</param>
         private void OnCodeModelBuilt(CodeModel codeModel)
         {
-            if (Document == codeModel.Document)
+            if (Document.FullName == codeModel.Document.FullName)
             {
                 UpdateViewModelRawCodeItems(codeModel.CodeItems);
             }
